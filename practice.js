@@ -1,4 +1,4 @@
-//Create a function that takes two numbers as arguments and return their sum
+//Create a function that takes two numbers as arguments and return their sum.
 
 function sum(num1, num2) {
   let sum = num1 + num2;
@@ -42,3 +42,21 @@ function convertAge(age) {
 }
 
 console.log(convertAge(29));
+
+// Create a function that takes voltage and current and returns the calculated power.
+
+function power(voltage, current) {
+  let totalPower = voltage * current;
+  return totalPower;
+}
+
+console.log(power(120, 30));
+
+// Create a function that takes an array containing only numbers and return the first element.
+
+function firstNumArray(arr) {
+  let firstNum = arr[0];
+  return firstNum;
+}
+
+console.log(firstNumArray([12, 1, 3]));
