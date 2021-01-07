@@ -60,3 +60,12 @@ function firstNumArray(arr) {
 }
 
 console.log(firstNumArray([12, 1, 3]));
+
+// Create a function that finds the maximum range of a triangle's third edge, where the side lengths are all integers.
+
+function nextEdge(side1, side2) {
+  let thirdEdge = side1 + side2 - 1;
+  return thirdEdge;
+}
+
+console.log(nextEdge(8, 3));
