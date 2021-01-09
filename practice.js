@@ -69,3 +69,20 @@ function nextEdge(side1, side2) {
 }
 
 console.log(nextEdge(8, 3));
+
+// Two numbers are passed as parameters. The first parameter divided by the second parameter will have a remainder, possibly zero. Return that value.
+
+function remainder(int1, int2) {
+  let getRemainder = int1 % int2;
+  return getRemainder;
+}
+
+console.log(remainder(-20, 100));
+
+// Create a function that takes length and width and finds the perimeter of a rectangle.
+
+function perimeter(length, width) {
+  let getPerimeter = (length + width) * 2;
+  return getPerimeter;
+}
+console.log(perimeter(30, 8));
