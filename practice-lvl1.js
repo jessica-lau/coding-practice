@@ -164,3 +164,12 @@ function totalLegs(animal1, animal2, animal3) {
 }
 
 console.log(totalLegs(6, 10, 26));
+
+// Create a function that takes two boolean variable flag and returns it as a string.
+
+function boolToString(a) {
+  var flag1 = new Boolean(a);
+  return flag1.toString();
+}
+
+console.log(boolToString(true));
