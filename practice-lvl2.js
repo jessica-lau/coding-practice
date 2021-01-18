@@ -68,3 +68,28 @@ function multipleSix() {
 }
 
 console.log(multipleSix());
+
+//Create a function that computes the hamming distance between two strings.
+
+//input character limit for each parameter is 6 random alphabets
+//go through each character in each parameter parallel to each other
+//if the letter in parameter 1 does not match parameter 2 in the same position then increase the character difference count by 1
+//if the letter in parameter 1 matches parameter 2 in the same position then do not increase the character difference count
+
+function hammingDistance(string1, string2) {
+  var result = 0;
+  for (var i = 0; i < string1.length; i++) {
+    let characters1 = string1.charAt(i);
+    let characters2 = string2.charAt(i);
+    if (characters1 === characters2) {
+      result;
+    } else {
+      result = result + 1;
+    }
+  }
+  return result;
+}
+
+console.log(hammingDistance("a", "d"));
+console.log(hammingDistance("d", "d"));
+console.log(hammingDistance("sdsdwf", "ewreff"));
