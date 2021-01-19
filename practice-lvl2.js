@@ -93,3 +93,5 @@ function hammingDistance(string1, string2) {
 console.log(hammingDistance("a", "d"));
 console.log(hammingDistance("d", "d"));
 console.log(hammingDistance("sdsdwf", "ewreff"));
+
+//Create a function that takes an array of numbers. Return the largest number in the array.
