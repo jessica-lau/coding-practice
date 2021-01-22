@@ -96,4 +96,19 @@ console.log(hammingDistance("sdsdwf", "ewreff"));
 
 //Create a function that takes an array of numbers. Return the largest number in the array.
 
+function numbers(arr) {
+  var result = 0;
+  for (var i = 0; i < arr.length; i++) {
+    let largeNum = arr[i];
+    if (largeNum > result) {
+      result = largeNum;
+    } else {
+      result;
+    }
+  }
+  return result;
+}
+
+console.log(numbers([2, 6, 8, 3]));
+
 //Create a function that returns a number, based on the string provided.
