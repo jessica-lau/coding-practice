@@ -112,3 +112,5 @@ function numbers(arr) {
 console.log(numbers([2, 6, 8, 3]));
 
 //Create a function that returns a number, based on the string provided.
+
+//Create a function that finds the index of a given item. e.g. search([1, 5, 3], 5) returns index 1
