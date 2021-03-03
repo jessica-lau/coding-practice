@@ -111,6 +111,25 @@ function numbers(arr) {
 
 console.log(numbers([2, 6, 8, 3]));
 
-//Create a function that returns a number, based on the string provided.
-
 //Create a function that finds the index of a given item. e.g. search([1, 5, 3], 5) returns index 1
+//choose a number in the array
+//output is the position of the chosen number in the array
+
+function numIndex(arr, arrNum) {
+  var result = 0;
+  for (var i = 0; i < arr.length; i++) {
+    let array = arr[i];
+    let number = arrNum;
+    if (number == array) {
+      result = i;
+    } else {
+    }
+  }
+
+  //(or this works too) ==> result = arr.indexOf(arrNum);
+
+  return result;
+}
+console.log(numIndex([3, 16, 10, 20, 50], 20));
+
+//Create a function that returns a number, based on the string provided.
