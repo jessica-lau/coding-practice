@@ -133,3 +133,5 @@ function numIndex(arr, arrNum) {
 console.log(numIndex([3, 16, 10, 20, 50], 20));
 
 //Create a function that returns a number, based on the string provided.
+
+function givenString()
