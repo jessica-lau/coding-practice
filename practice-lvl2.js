@@ -134,4 +134,19 @@ console.log(numIndex([3, 16, 10, 20, 50], 20));
 
 //Create a function that returns a number, based on the string provided.
 
-function givenString()
+function word(num) {
+  if (num == "zero") {
+    return 0;
+  } else if (num == "one") {
+    return 1;
+  } else if (num == "two") {
+    return 2;
+  } else if (num == "three") {
+    return 3;
+  } else if (num == "four") {
+    return 4;
+  } else if (num == "five") {
+    return 5;
+  }
+}
+console.log(word("three"));
