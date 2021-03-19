@@ -150,3 +150,7 @@ function word(num) {
   }
 }
 console.log(word("three"));
+
+//Create a function that takes a string and returns the number (count) of vowels contained within it.
+
+//Create a function that returns the index of the first vowel in a string.
