@@ -153,5 +153,23 @@ console.log(word("three"));
 
 //Create a function that takes a string and returns the number (count) of vowels contained within it.
 
-function vowelCount(string) {}
+function vowelCount(string) {
+
+  var result = 0;
+  for (var i =0; i < string.length; i++) {
+    let characters = string.charAt(i);
+    if (characters)
+  }
+}
 //Create a function that returns the index of the first vowel in a string.
+var result = 0;
+for (var i = 0; i < string1.length; i++) {
+  let characters1 = string1.charAt(i);
+  let characters2 = string2.charAt(i);
+  if (characters1 === characters2) {
+    result;
+  } else {
+    result = result + 1;
+  }
+}
+return result;
