@@ -152,24 +152,20 @@ function word(num) {
 console.log(word("three"));
 
 //Create a function that takes a string and returns the number (count) of vowels contained within it.
+//go through each character in a given string
+//if the character is a vowel (a,e,i,o,u) then add it to the number count
+//if the character is not a vowel then do no add it to the vowel count
 
 function vowelCount(string) {
+  var vowelSum = 0;
+  for (var i = 0; i < string.length; i++) {
+    if (string[i].match(/[aeiou]/g)) {
+      vowelSum = vowelSum + 1;
+    }
+  }
+  return vowelSum;
+}
 
-  var result = 0;
-  for (var i =0; i < string.length; i++) {
-    let characters = string.charAt(i);
-    if (characters)
-  }
-}
+console.log(vowelCount("happy times"));
+
 //Create a function that returns the index of the first vowel in a string.
-var result = 0;
-for (var i = 0; i < string1.length; i++) {
-  let characters1 = string1.charAt(i);
-  let characters2 = string2.charAt(i);
-  if (characters1 === characters2) {
-    result;
-  } else {
-    result = result + 1;
-  }
-}
-return result;
