@@ -170,7 +170,24 @@ console.log(vowelCount("happy times"));
 
 //Create a function that returns the index of the first vowel in a string.
 //go through each character of a given string
-//if the character is a vowel return the index position
-//if the character is not a vowel do not return the index position
+//if the character is the first vowel of the string then return the index position
+//if the character is not a vowel or the first vowel of the string then do not return the index position
 
-first;
+function firstVowel(string) {
+  var result = 0;
+  for (var i = 0; i < string.length; i++) {
+    if (string[i].match(/[aeiou]/g)) {
+      result = i;
+      break;
+    } else {
+      result = "no vowels";
+    }
+  }
+  return result;
+}
+console.log(firstVowel("fried chicken"));
+
+//this works too
+// function vowel(string) {
+//   return string.match(/[aeiou]/).index;
+// }
