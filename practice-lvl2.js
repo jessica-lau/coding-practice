@@ -169,3 +169,8 @@ function vowelCount(string) {
 console.log(vowelCount("happy times"));
 
 //Create a function that returns the index of the first vowel in a string.
+//go through each character of a given string
+//if the character is a vowel return the index position
+//if the character is not a vowel do not return the index position
+
+first;
