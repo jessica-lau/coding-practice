@@ -191,3 +191,9 @@ console.log(firstVowel("fried chicken"));
 // function vowel(string) {
 //   return string.match(/[aeiou]/).index;
 // }
+
+//Create a function that takes an array of non-negative integers and strings and return a new array without the strings.
+
+//Create a function that takes in an array of numbers and returns the sum of its cubes.
+
+//Given two strings, repeatedly cycle through all of the letters in the first string until it is the same length as the second string.
