@@ -193,6 +193,7 @@ console.log(firstVowel("fried chicken"));
 // }
 
 //Create a function that takes an array of non-negative integers and strings and return a new array without the strings.
+//
 
 //Create a function that takes in an array of numbers and returns the sum of its cubes.
 
