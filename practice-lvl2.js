@@ -109,17 +109,18 @@ function numbers(arr) {
   return result;
 }
 
-console.log(numbers([2, 6, 8, 3]));
+let arr = [2, 6, 8, 3];
+console.log(numbers(arr));
 
 //Create a function that finds the index of a given item. e.g. search([1, 5, 3], 5) returns index 1
 
 //choose a number in the array
 //output is the position of the chosen number in the array
 
-function numIndex(arr, arrNum) {
+function numIndex(arrList, arrNum) {
   var result = 0;
-  for (var i = 0; i < arr.length; i++) {
-    let array = arr[i];
+  for (var i = 0; i < arrList.length; i++) {
+    let array = arrList[i];
     let number = arrNum;
     if (number == array) {
       result = i;
@@ -131,7 +132,10 @@ function numIndex(arr, arrNum) {
 
   return result;
 }
-console.log(numIndex([3, 16, 10, 20, 50], 20));
+
+let arrList = [3, 16, 10, 20, 50];
+let arrNum = 20;
+console.log(numIndex(arrList, arrNum));
 
 //Create a function that returns a number, based on the string provided.
 
@@ -150,6 +154,7 @@ function word(num) {
     return 5;
   }
 }
+
 console.log(word("three"));
 
 //Create a function that takes a string and returns the number (count) of vowels contained within it.
@@ -216,5 +221,22 @@ let items = [5, "friday", "saturday", 3];
 console.log(onlyIntegers(items));
 
 //Create a function that takes in an array of numbers and returns the sum of its cubes.
+
+//create a variable returning sum of cube numbers
+//loop through the array and times each number in the array to itself 3 times
+//add all the numbers together and return the sum in the variable
+
+function cubeSum(numbers) {
+  var sum = 0;
+  for (i = 0; i < numbers.length; i++) {
+    var cubeValue = Math.pow(numbers[i], 3);
+    console.log(cubeValue);
+    sum = sum + cubeValue;
+  }
+  return sum;
+}
+
+let numbersList = [2, 3, 6];
+console.log(cubeSum(numbersList));
 
 //Given two strings, repeatedly cycle through all of the letters in the first string until it is the same length as the second string.
