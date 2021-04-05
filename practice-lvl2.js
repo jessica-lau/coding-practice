@@ -240,3 +240,8 @@ let numbersList = [2, 3, 6];
 console.log(cubeSum(numbersList));
 
 //Given two strings, repeatedly cycle through all of the letters in the first string until it is the same length as the second string.
+
+//create a variable returning first string that matches second string length
+//go through the first string until it matches the length of the second string
+//if the first string length matches the second string length then stop
+//if the first string length did not reach the the second string length, keep going
