@@ -112,6 +112,7 @@ function numbers(arr) {
 console.log(numbers([2, 6, 8, 3]));
 
 //Create a function that finds the index of a given item. e.g. search([1, 5, 3], 5) returns index 1
+
 //choose a number in the array
 //output is the position of the chosen number in the array
 
@@ -152,6 +153,7 @@ function word(num) {
 console.log(word("three"));
 
 //Create a function that takes a string and returns the number (count) of vowels contained within it.
+
 //go through each character in a given string
 //if the character is a vowel (a,e,i,o,u) then add it to the number count
 //if the character is not a vowel then do no add it to the vowel count
@@ -169,6 +171,7 @@ function vowelCount(string) {
 console.log(vowelCount("happy times"));
 
 //Create a function that returns the index of the first vowel in a string.
+
 //go through each character of a given string
 //if the character is the first vowel of the string then return the index position
 //if the character is not a vowel or the first vowel of the string then do not return the index position
@@ -193,11 +196,23 @@ console.log(firstVowel("fried chicken"));
 // }
 
 //Create a function that takes an array of non-negative integers and strings and return a new array without the strings.
-//Create a function that takes an array of non-negative integers and strings and return a new array without the strings.
-//go through the array and the item is an integer, add it to the new array
+
+//create a variable to return the new array
+//go through the array and if the item is an integer, add it to the new array
 //if item is a string, do not add it to the new array
 
-function array(items) {}
+function array(items) {
+  var newArray = [];
+  for (i = 0; i < items.length; i++) {
+    if (typeof items === "number") {
+      newArray = [i];
+    } else {
+    }
+  }
+  return newArray;
+}
+
+console.log(array(5, "hi", "cool", 3));
 
 //Create a function that takes in an array of numbers and returns the sum of its cubes.
 
