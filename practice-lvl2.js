@@ -201,18 +201,19 @@ console.log(firstVowel("fried chicken"));
 //go through the array and if the item is an integer, add it to the new array
 //if item is a string, do not add it to the new array
 
-function array(items) {
+function onlyIntegers(items) {
   var newArray = [];
   for (i = 0; i < items.length; i++) {
-    if (typeof items === "number") {
-      newArray = i;
+    if (typeof items[i] === "number") {
+      newArray.push(items[i]);
     } else {
     }
   }
   return newArray;
 }
 
-console.log(array(5, "hi", "cool", 3));
+let items = [5, "friday", "saturday", 3];
+console.log(onlyIntegers(items));
 
 //Create a function that takes in an array of numbers and returns the sum of its cubes.
 
