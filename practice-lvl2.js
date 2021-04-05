@@ -205,7 +205,7 @@ function array(items) {
   var newArray = [];
   for (i = 0; i < items.length; i++) {
     if (typeof items === "number") {
-      newArray = [i];
+      newArray = i;
     } else {
     }
   }
