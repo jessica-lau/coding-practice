@@ -274,3 +274,27 @@ console.log(sameLength(stringOne, stringTwo));
 // let stringTwo = "philantropist";
 
 // console.log(sameLength(stringOne, stringTwo));
+
+//A word is on the loose and now has tried to hide amongst a crowd of tall letters! Help write a function to detect what the word is, knowing the following rules:
+//The wanted word is in lowercase.
+//The crowd of letters is all in uppercase.
+//Note that the word will be spread out amongst the random letters, but their letters remain in the same order.
+
+function hiddenWord(collection) {
+  var result = "";
+  for (i = 0; i <= collection.length; i++) {
+    let letter = collection.charAt(i);
+    if (letter === letter.toLowerCase()) {
+      result = result.concat(letter);
+    } else {
+      result = result;
+    }
+  }
+  return result;
+}
+
+let collection = "YEvNaMFGcUISIaDtJKDiOoOnE";
+console.log(hiddenWord(collection));
+
+//Create a function that takes a number (step) as an argument and returns the number of matchsticks in that step.
+//Think of the input (step) as the total number of houses that have been connected together.
