@@ -245,3 +245,32 @@ console.log(cubeSum(numbersList));
 //go through the first string until it matches the length of the second string
 //if the first string length matches the second string length then stop
 //if the first string length did not reach the the second string length, keep going
+
+function sameLength(stringOne, stringTwo) {
+  var result = "";
+  for (i = 0; i < stringTwo.length; i++) {
+    result = result + stringOne[i % 3];
+  }
+
+  return result;
+}
+
+let stringOne = "sun";
+let stringTwo = "philantropist";
+
+console.log(sameLength(stringOne, stringTwo));
+
+//or written this way
+
+// function sameLength(stringOne, stringTwo) {
+//   var result = "";
+//   while (result.length <= stringTwo.length) {
+//     result += stringOne;
+//   }
+//   return result.substring(0, stringTwo.length);
+// }
+
+// let stringOne = "sun";
+// let stringTwo = "philantropist";
+
+// console.log(sameLength(stringOne, stringTwo));
