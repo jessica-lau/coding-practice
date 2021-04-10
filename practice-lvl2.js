@@ -299,4 +299,9 @@ console.log(hiddenWord(collection));
 //Create a function that takes a number (step) as an argument and returns the number of matchsticks in that step.
 //Think of the input (step) as the total number of houses that have been connected together.
 
+//create a "total" variable that will return the number of matchsticks
+//start at step 0 which returns 0 matchsticks
+//with each progressing step multiply the step by 5 to get total number of matchsticks and replace previous "total" value
+//add 1 to the "total" value
+
 //Create a function to return the amount of "potatoes" there are in a string.
