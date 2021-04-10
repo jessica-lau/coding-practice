@@ -293,7 +293,7 @@ function hiddenWord(collection) {
   return result;
 }
 
-let collection = "YEvNaMFGcUISIaDtJKDiOoOnE";
+let collection = "YEvNaMFGcUISIaDtJKDiOoOnEs";
 console.log(hiddenWord(collection));
 
 //Create a function that takes a number (step) as an argument and returns the number of matchsticks in that step.
