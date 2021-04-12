@@ -317,3 +317,5 @@ function matchsticks(step) {
 console.log(matchsticks(50));
 
 //Create a function to return the amount of "potatoes" there are in a string.
+
+//Create a function that takes two arguments. Both arguments are integers, a and b. Return true if one of them is 10 or if their sum is 10.
