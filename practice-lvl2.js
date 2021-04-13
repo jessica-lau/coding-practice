@@ -325,14 +325,17 @@ console.log(matchsticks(50));
 function potatoes(string) {
   var potatoNumber = 1;
   for (i = 1; i < string.length; i++) {
-    if (string.charAt(i) == "p") potatoNumber = potatoNumber + 1;
+    if (string.charAt(i) == "p") {
+      potatoNumber = potatoNumber + 1;
+    } else {
+      potatoNumber = potatoNumber;
+    }
   }
-
   return potatoNumber;
 }
 
 console.log(
-  potatoes("potatoespotatoespotatoespotatoespotatoespotatoespotatoes")
+  potatoes("potatoespotatoespotatoespotatoespotatoespotatoespotatoespotatoes")
 );
 
 //Create a function that takes two arguments. Both arguments are integers, a and b. Return true if one of them is 10 or if their sum is 10.
