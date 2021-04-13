@@ -318,4 +318,21 @@ console.log(matchsticks(50));
 
 //Create a function to return the amount of "potatoes" there are in a string.
 
+//create a variable called potatoNumber
+//loop through a string that contains the word potatoes where each increment is 8 characters
+//return the number of potatoes in the string
+
+function potatoes(string) {
+  var potatoNumber = 1;
+  for (i = 1; i < string.length; i++) {
+    if (string.charAt(i) == "p") potatoNumber = potatoNumber + 1;
+  }
+
+  return potatoNumber;
+}
+
+console.log(
+  potatoes("potatoespotatoespotatoespotatoespotatoespotatoespotatoes")
+);
+
 //Create a function that takes two arguments. Both arguments are integers, a and b. Return true if one of them is 10 or if their sum is 10.
