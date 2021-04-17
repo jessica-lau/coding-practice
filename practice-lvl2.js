@@ -341,3 +341,9 @@ console.log(
 //Create a function that takes two arguments. Both arguments are integers, a and b. Return true if one of them is 10 or if their sum is 10.
 
 //You are counting points for a basketball game, given the amount of 2-pointers scored and 3-pointers scored, find the final points for the team and return that value.
+
+//Write a function that checks whether a person can watch an MA15+ rated movie. One of the following two conditions is required for admittance:
+
+//The person is at least 15 years old.
+//They have parental supervision.
+//The function accepts two parameters, age and isSupervised. Return a boolean.
