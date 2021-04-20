@@ -339,6 +339,23 @@ console.log(
 );
 
 //Create a function that takes two arguments. Both arguments are integers, a and b. Return true if one of them is 10 or if their sum is 10.
+//if integer a or b is 10 then return a boolean of true
+//if integer a and integer b adds up to 10 then return a boolean of true
+//if integer a and integer b do not add up to 10 then return a boolean of false
+
+function makesTen(a, b) {
+  if (a === 10 || b === 10) {
+    return true;
+  } else if (a + b === 10) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(makesTen(10, 8));
+console.log(makesTen(8, 8));
+console.log(makesTen(2, 8));
 
 //You are counting points for a basketball game, given the amount of 2-pointers scored and 3-pointers scored, find the final points for the team and return that value.
 
