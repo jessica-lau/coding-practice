@@ -377,3 +377,16 @@ console.log(points(10, 3));
 //The person is at least 15 years old.
 //They have parental supervision.
 //The function accepts two parameters, age and isSupervised. Return a boolean.
+
+function acceptedIntoMovie(age, isSupervised) {
+  if (age >= 15 || isSupervised == "yes") {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(acceptedIntoMovie(25, "no"));
+console.log(acceptedIntoMovie(10, "yes"));
+console.log(acceptedIntoMovie(13, "no"));
+console.log(acceptedIntoMovie(15, "yes"));
