@@ -358,6 +358,19 @@ console.log(makesTen(8, 8));
 console.log(makesTen(2, 8));
 
 //You are counting points for a basketball game, given the amount of 2-pointers scored and 3-pointers scored, find the final points for the team and return that value.
+//points start at 0
+//points in first argument are worth 2 times the points
+//points in second argument are worth 3 times the points
+//add total points in first argument and total points in second argument to get the grand total
+//return grand total
+
+function points(twoPoints, threePoints) {
+  var totalPoints = 0;
+  totalPoints = twoPoints * 2 + threePoints * 3;
+  return totalPoints;
+}
+
+console.log(points(10, 3));
 
 //Write a function that checks whether a person can watch an MA15+ rated movie. One of the following two conditions is required for admittance:
 
