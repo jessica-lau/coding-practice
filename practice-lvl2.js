@@ -406,3 +406,5 @@ console.log(acceptedIntoMovie(15, "yes"));
 //If the number is negative, return the related ancestor.
 //If positive, return the related descendant.
 //You are generation 0. In the case of 0 (male or female), return "me!".
+
+//You have two arrays. One shows the names of the people names, while the other shows their occupation jobs. Your task is to create an object displaying each person to their respective occupation.
