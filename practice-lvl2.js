@@ -391,6 +391,22 @@ console.log(acceptedIntoMovie(10, "yes"));
 console.log(acceptedIntoMovie(13, "no"));
 console.log(acceptedIntoMovie(15, "yes"));
 
+//Write a function that takes a two-digit number and determines if it's the largest of two possible digit swaps.
+
+function largestSwap(numOne, numTwo) {
+  number = "";
+  number = number.concat(numOne) + number.concat(numTwo);
+  if (numOne > numTwo) {
+    return true;
+  } else if (numOne == numTwo) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(largestSwap(5, 9));
+
 //Create a function that takes a number as an argument and returns the appropriate error message. You should do this without using the switch or if statements.
 
 //The input error will be 1 to 5:
@@ -407,14 +423,12 @@ console.log(acceptedIntoMovie(15, "yes"));
 //If positive, return the related descendant.
 //You are generation 0. In the case of 0 (male or female), return "me!".
 
-//Write a function that takes a two-digit number and determines if it's the largest of two possible digit swaps.
-
 //You have two arrays. One shows the names of the people names, while the other shows their occupation jobs. Your task is to create an object displaying each person to their respective occupation.
 
-function assignJob(names, jobs) {
-  const names = ["Ally", "Zoe", "Sam", "Chloe", "Carter"];
-  const jobs = ["Accountant", "Engineer", "Architect", "Doctor", "Nurse"];
+// function assignJob(names, jobs) {
+//   const names = ["Ally", "Zoe", "Sam", "Chloe", "Carter"];
+//   const jobs = ["Accountant", "Engineer", "Architect", "Doctor", "Nurse"];
 
-  for (i = 0; i <= names; i++) {}
-  for (i = 0; i <= jobs; i++) {}
-}
+//   for (i = 0; i <= names; i++) {}
+//   for (i = 0; i <= jobs; i++) {}
+// }
