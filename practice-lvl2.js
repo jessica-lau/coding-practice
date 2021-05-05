@@ -422,6 +422,12 @@ function assignJob(names, jobs) {
 
 console.log(assignJob(names, jobs));
 
+//Create a function that takes a number x and a character y ("m" for male, "f" for female), and returns the name of an ancestor (m/f) or descendant (m/f).
+
+//If the number is negative, return the related ancestor.
+//If positive, return the related descendant.
+//You are generation 0. In the case of 0 (male or female), return "me!".
+
 //Create a function that takes a number as an argument and returns the appropriate error message. You should do this without using the switch or if statements.
 
 //The input error will be 1 to 5:
@@ -431,9 +437,3 @@ console.log(assignJob(names, jobs));
 //3 >> "Pump Error"
 //4 >> "c"
 //5 >> "Temperature Sensor Error"
-
-//Create a function that takes a number x and a character y ("m" for male, "f" for female), and returns the name of an ancestor (m/f) or descendant (m/f).
-
-//If the number is negative, return the related ancestor.
-//If positive, return the related descendant.
-//You are generation 0. In the case of 0 (male or female), return "me!".
