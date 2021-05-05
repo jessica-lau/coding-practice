@@ -407,6 +407,21 @@ function largestSwap(numOne, numTwo) {
 
 console.log(largestSwap(5, 9));
 
+//You have two arrays. One shows the names of the people names, while the other shows their occupation jobs. Your task is to create an object displaying each person to their respective occupation.
+
+const names = ["Ally", "Zoe", "Sam", "Chloe", "Carter"];
+const jobs = ["Accountant", "Engineer", "Architect", "Doctor", "Nurse"];
+
+function assignJob(names, jobs) {
+  var nameAndJob = [];
+  for (i = 0; i < names.length; i++) {
+    nameAndJob.push(names[i] + ": " + jobs[i]);
+  }
+  return nameAndJob;
+}
+
+console.log(assignJob(names, jobs));
+
 //Create a function that takes a number as an argument and returns the appropriate error message. You should do this without using the switch or if statements.
 
 //The input error will be 1 to 5:
@@ -422,13 +437,3 @@ console.log(largestSwap(5, 9));
 //If the number is negative, return the related ancestor.
 //If positive, return the related descendant.
 //You are generation 0. In the case of 0 (male or female), return "me!".
-
-//You have two arrays. One shows the names of the people names, while the other shows their occupation jobs. Your task is to create an object displaying each person to their respective occupation.
-
-// function assignJob(names, jobs) {
-//   const names = ["Ally", "Zoe", "Sam", "Chloe", "Carter"];
-//   const jobs = ["Accountant", "Engineer", "Architect", "Doctor", "Nurse"];
-
-//   for (i = 0; i <= names; i++) {}
-//   for (i = 0; i <= jobs; i++) {}
-// }
