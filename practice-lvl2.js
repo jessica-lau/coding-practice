@@ -409,6 +409,11 @@ console.log(largestSwap(5, 9));
 
 //You have two arrays. One shows the names of the people names, while the other shows their occupation jobs. Your task is to create an object displaying each person to their respective occupation.
 
+//name array contains five names
+//job array contains five jobs
+//loop through the name and job arrays until they reach the length of the name array
+//save each index value to a new array
+
 const names = ["Ally", "Zoe", "Sam", "Chloe", "Carter"];
 const jobs = ["Accountant", "Engineer", "Architect", "Doctor", "Nurse"];
 
