@@ -442,3 +442,5 @@ console.log(assignJob(names, jobs));
 //3 >> "Pump Error"
 //4 >> "c"
 //5 >> "Temperature Sensor Error"
+
+//You will be given an array of drinks, with each drink being an object with two properties: name and price. Create a function that has the drinks array as an argument and return the drinks objects sorted by price in ascending order.
