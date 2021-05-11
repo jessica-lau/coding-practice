@@ -445,17 +445,19 @@ const relatedDescendantFemale = [
 function generation(x, y) {
   var whatGeneration = "";
   if (x < 0 && y == "m") {
-    return relatedAncestorMale[x];
+    return relatedAncestorMale[i];
   } else if (x < 0 && y == "f") {
-    relatedAncestorFemale[x];
+    return relatedAncestorFemale[i];
   } else if (x > 0 && y == "m") {
-    relatedDescendantMale[x];
+    return relatedDescendantMale[i];
   } else if (x > 0 && y == "f") {
-    relatedDescendantFemale[x];
+    return relatedDescendantFemale[i];
   } else {
     whatGeneration = "me!";
   }
 }
+
+console.log(generation(-3, "m"));
 
 //Create a function that takes a number as an argument and returns the appropriate error message. You should do this without using the switch or if statements.
 
