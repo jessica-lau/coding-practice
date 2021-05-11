@@ -433,31 +433,39 @@ console.log(assignJob(names, jobs));
 //If positive, return the related descendant.
 //You are generation 0. In the case of 0 (male or female), return "me!".
 
-const relatedAncestorMale = ["great grandfather", "grandfather", "father"];
-const relatedAncestorFemale = ["great grandmother", "grandmother", "mother"];
-const relatedDescendantMale = ["son", "grandson", "great grandson"];
-const relatedDescendantFemale = [
+const generationMale = [
+  "great grandfather",
+  "grandfather",
+  "father",
+  "me!",
+  "son",
+  "grandson",
+  "great grandson",
+];
+const generationFemale = [
+  "great grandmother",
+  "grandmother",
+  "mother",
+  "me!",
   "daughter",
   "granddaughter",
   "great granddaughter",
 ];
+const generationIndex = [-3, -2, -1, 0, 1, 2, 3];
 
 function generation(x, y) {
   var whatGeneration = "";
-  if (x < 0 && y == "m") {
-    return relatedAncestorMale[i];
-  } else if (x < 0 && y == "f") {
-    return relatedAncestorFemale[i];
-  } else if (x > 0 && y == "m") {
-    return relatedDescendantMale[i];
-  } else if (x > 0 && y == "f") {
-    return relatedDescendantFemale[i];
-  } else {
-    whatGeneration = "me!";
+  var index = generationIndex.indexOf(x);
+
+  if (y == "m") {
+    whatGeneration = generationMale[index];
+  } else if (y == "f") {
+    whatGeneration = generationFemale[index];
   }
+  return whatGeneration;
 }
 
-console.log(generation(-3, "m"));
+console.log(generation(-2, "f"));
 
 //Create a function that takes a number as an argument and returns the appropriate error message. You should do this without using the switch or if statements.
 
