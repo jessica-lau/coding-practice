@@ -467,6 +467,24 @@ function generation(x, y) {
 
 console.log(generation(-2, "f"));
 
+//You will be given an array of drinks, with each drink being an object with two properties: name and price.
+//Create a function that has the drinks array as an argument and return the drinks objects sorted by price in ascending order.
+
+var drinks = [
+  { name: "milk tea", price: 5 },
+  { name: "lemonade", price: 3 },
+  { name: "coffee", price: 6 },
+];
+
+function sortPrice(drinks) {
+  var drinks = [];
+  drinks.sort(function (a, b) {
+    return a.price - b.price;
+  });
+}
+
+console.log(sortPrice());
+
 //Create a function that takes a number as an argument and returns the appropriate error message. You should do this without using the switch or if statements.
 
 //The input error will be 1 to 5:
@@ -476,5 +494,3 @@ console.log(generation(-2, "f"));
 //3 >> "Pump Error"
 //4 >> "c"
 //5 >> "Temperature Sensor Error"
-
-//You will be given an array of drinks, with each drink being an object with two properties: name and price. Create a function that has the drinks array as an argument and return the drinks objects sorted by price in ascending order.
