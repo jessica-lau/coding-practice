@@ -494,3 +494,5 @@ console.log(sortPrice());
 //3 >> "Pump Error"
 //4 >> "c"
 //5 >> "Temperature Sensor Error"
+
+//Create a function that takes a string and returns a string in which each character is repeated once.
