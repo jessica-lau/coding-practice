@@ -474,16 +474,15 @@ var drinks = [
   { name: "milk tea", price: 5 },
   { name: "lemonade", price: 3 },
   { name: "coffee", price: 6 },
+  { name: "juice", price: 15 },
+  { name: "smoothie", price: 10 },
 ];
 
-function sortPrice(drinks) {
-  var drinks = [];
-  drinks.sort(function (a, b) {
-    return a.price - b.price;
-  });
-}
+drinks.sort((a, b) => {
+  return a.price - b.price;
+});
 
-console.log(sortPrice());
+console.log(drinks);
 
 //Create a function that takes a number as an argument and returns the appropriate error message. You should do this without using the switch or if statements.
 
