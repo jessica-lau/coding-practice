@@ -484,6 +484,19 @@ drinks.sort((a, b) => {
 
 console.log(drinks);
 
+//Create a function that takes a string and returns a string in which each character is repeated once.
+
+function doubleChar(string) {
+  var result = "";
+  for (i = 0; i < string.length; i++) {
+    result = result + string.charAt(i).repeat(2);
+  }
+
+  return result;
+}
+
+console.log(doubleChar("hot chocolate"));
+
 //Create a function that takes a number as an argument and returns the appropriate error message. You should do this without using the switch or if statements.
 
 //The input error will be 1 to 5:
@@ -493,5 +506,3 @@ console.log(drinks);
 //3 >> "Pump Error"
 //4 >> "c"
 //5 >> "Temperature Sensor Error"
-
-//Create a function that takes a string and returns a string in which each character is repeated once.
