@@ -8,7 +8,7 @@
 function reverseCase(phrase) {
   var result = "";
   var i;
-  for (i = 0; i < phrase.length; i++) {
+  for (var i = 0; i < phrase.length; i++) {
     let letter = phrase.charAt(i);
     if (letter === letter.toUpperCase()) {
       result = result.concat(letter.toLowerCase());
@@ -208,7 +208,7 @@ console.log(firstVowel("fried chicken"));
 
 function onlyIntegers(items) {
   var newArray = [];
-  for (i = 0; i < items.length; i++) {
+  for (var i = 0; i < items.length; i++) {
     if (typeof items[i] === "number") {
       newArray.push(items[i]);
     } else {
@@ -228,7 +228,7 @@ console.log(onlyIntegers(items));
 
 function cubeSum(numbers) {
   var sum = 0;
-  for (i = 0; i < numbers.length; i++) {
+  for (var i = 0; i < numbers.length; i++) {
     var cubeValue = Math.pow(numbers[i], 3);
     console.log(cubeValue);
     sum = sum + cubeValue;
@@ -248,7 +248,7 @@ console.log(cubeSum(numbersList));
 
 function sameLength(stringOne, stringTwo) {
   var result = "";
-  for (i = 0; i < stringTwo.length; i++) {
+  for (var i = 0; i < stringTwo.length; i++) {
     result = result + stringOne[i % 3];
   }
 
@@ -282,7 +282,7 @@ console.log(sameLength(stringOne, stringTwo));
 
 function hiddenWord(collection) {
   var result = "";
-  for (i = 0; i <= collection.length; i++) {
+  for (var i = 0; i <= collection.length; i++) {
     let letter = collection.charAt(i);
     if (letter === letter.toLowerCase()) {
       result = result.concat(letter);
@@ -324,7 +324,7 @@ console.log(matchsticks(50));
 
 function potatoes(string) {
   var potatoNumber = 1;
-  for (i = 1; i < string.length; i++) {
+  for (var i = 1; i < string.length; i++) {
     if (string.charAt(i) == "p") {
       potatoNumber = potatoNumber + 1;
     } else {
@@ -419,7 +419,7 @@ const jobs = ["Accountant", "Engineer", "Architect", "Doctor", "Nurse"];
 
 function assignJob(names, jobs) {
   var nameAndJob = [];
-  for (i = 0; i < names.length; i++) {
+  for (var i = 0; i < names.length; i++) {
     nameAndJob.push(names[i] + ": " + jobs[i]);
   }
   return nameAndJob;
@@ -488,7 +488,7 @@ console.log(drinks);
 
 function doubleChar(string) {
   var result = "";
-  for (i = 0; i < string.length; i++) {
+  for (var i = 0; i < string.length; i++) {
     result = result + string.charAt(i).repeat(2);
   }
 
@@ -506,3 +506,20 @@ console.log(doubleChar("hot chocolate"));
 //3 >> "Pump Error"
 //4 >> "c"
 //5 >> "Temperature Sensor Error"
+
+const message = [
+  "Check the fan",
+  "Emergency stop",
+  "Pump Error",
+  "c",
+  "Temperature Sensor Error",
+];
+
+function errorMessage(number) {
+  for (var i = 1; i < message.length; i++) {
+    result = message[number];
+  }
+  return result;
+}
+
+console.log(errorMessage(0));
