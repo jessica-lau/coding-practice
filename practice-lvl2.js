@@ -515,11 +515,11 @@ const message = [
   "Temperature Sensor Error",
 ];
 
-function errorMessage(number) {
+function error(number) {
   for (var i = 1; i < message.length; i++) {
     result = message[number];
   }
   return result;
 }
 
-console.log(errorMessage(0));
+console.log(error(0));
