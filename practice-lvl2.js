@@ -528,3 +528,16 @@ console.log(error("hi"));
 
 //Create a function that changes specific words into emoticons.
 //Given a sentence as a string, replace the words smile, grin, sad and mad with their corresponding emoticons.
+
+const face = ["smile", "grin", "sad", "mad"];
+const emotion = [":D", ":)", ":(", ":P"];
+
+function emotify(expression) {
+  var sentence = "";
+  var index = face.indexOf(expression);
+
+  sentence = "Make me " + emotion[index];
+  return sentence;
+}
+
+console.log(emotify("smile"));
