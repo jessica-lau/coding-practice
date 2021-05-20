@@ -523,3 +523,6 @@ function error(number) {
 }
 
 console.log(error(0));
+
+//Create a function that changes specific words into emoticons.
+//Given a sentence as a string, replace the words smile, grin, sad and mad with their corresponding emoticons.
