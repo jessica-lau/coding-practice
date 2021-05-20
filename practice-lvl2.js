@@ -516,13 +516,15 @@ const message = [
 ];
 
 function error(number) {
-  for (var i = 1; i < message.length; i++) {
-    result = message[number];
+  var result = "";
+  result = message[number - 1];
+  if (number - 1 < 0 || number - 1 >= 5 || isNaN(number)) {
+    result = 101;
   }
   return result;
 }
 
-console.log(error(0));
+console.log(error("hi"));
 
 //Create a function that changes specific words into emoticons.
 //Given a sentence as a string, replace the words smile, grin, sad and mad with their corresponding emoticons.
