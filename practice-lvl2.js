@@ -541,3 +541,10 @@ function emotify(expression) {
 }
 
 console.log(emotify("smile"));
+
+//Create a function that returns the thickness (in meters) of a piece of paper after folding it n number of times.
+//The paper starts off with a thickness of 0.5mm.
+//There are 1000mm in a single meter.
+
+//Write a function that takes a string name and a number num (either 0 or 1) and return "Hello" + name if num is 1, otherwise return "Bye" + name.
+//The name you return must be capitalized.
