@@ -558,3 +558,15 @@ console.log(numLayers(21));
 
 //Write a function that takes a string name and a number num (either 0 or 1) and return "Hello" + name if num is 1, otherwise return "Bye" + name.
 //The name you return must be capitalized.
+
+function sayHello(name, num) {
+  var greeting = "";
+  if (num == 1) {
+    greeting = "Hello " + name.charAt(0).toUpperCase() + name.slice(1);
+  } else if (num == 0) {
+    greeting = "Bye " + name.charAt(0).toUpperCase() + name.slice(1);
+  }
+  return greeting;
+}
+
+console.log(sayHello("hunter", 1));
