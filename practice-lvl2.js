@@ -546,5 +546,15 @@ console.log(emotify("smile"));
 //The paper starts off with a thickness of 0.5mm.
 //There are 1000mm in a single meter.
 
+function numLayers(folds) {
+  var thickness = 0.5;
+  for (var i = 0; i < folds; i++) {
+    thickness = thickness + thickness;
+  }
+  return thickness / 1000;
+}
+
+console.log(numLayers(21));
+
 //Write a function that takes a string name and a number num (either 0 or 1) and return "Hello" + name if num is 1, otherwise return "Bye" + name.
 //The name you return must be capitalized.
