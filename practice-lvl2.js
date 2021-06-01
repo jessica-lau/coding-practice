@@ -574,17 +574,25 @@ console.log(sayHello("hunter", 1));
 //Create a function that takes an array of 10 numbers (between 0 and 9) and returns a string of those numbers formatted as a phone number (e.g. (555) 555-5555).
 //Don't forget the space after the closing parenthesis.
 
-const phone = [6, 1, 7, 8, 8, 8, 5, 5, 0, 0];
+let phone = [6, 1, 7, 8, 8, 8, 2, 2, 2, 2];
 
-function phoneNumber(x) {
+function phoneNumber(phone) {
   var number = "";
-  var formatNumber = phone.indexOf(x);
-
-  number = phone[formatNumber];
+  for (var i = 0; i < phone.length; i++) {
+    if (i === 0) {
+      number = "(" + phone[i];
+    } else if (i === 2) {
+      number = number + phone[i] + ") ";
+    } else if (i === 5) {
+      number = number + phone[i] + "-";
+    } else {
+      number = number + phone[i];
+    }
+  }
   return number;
 }
 
-console.log(phoneNumber(6));
+console.log(phoneNumber(phone));
 
 //Create a function that takes a number as an argument and returns true or false depending on whether the number is symmetrical or not.
 //A number is symmetrical when it is the same as its reverse.
