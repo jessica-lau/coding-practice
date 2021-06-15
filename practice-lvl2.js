@@ -598,3 +598,5 @@ console.log(phoneNumber(phone));
 //A number is symmetrical when it is the same as its reverse.
 
 function symmetrical(number) {}
+
+//Given an array of numbers, return an array which contains all the even numbers in the orginal array, which also have even indices.
