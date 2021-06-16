@@ -601,7 +601,7 @@ let arrSymmetry = [3, 3, 3, 3];
 
 function symmetrical(arrSymmetry) {
   for (var i = 0; i < arrSymmetry.length / 2; i++) {
-    if (arrSymmetry[i] !== arrSymmetry[arrSymmetry.length - i - 1]) {
+    if (arrSymmetry[i] != arrSymmetry[arrSymmetry.length - i - 1]) {
       return false;
     }
   }
