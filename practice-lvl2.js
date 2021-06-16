@@ -597,16 +597,24 @@ console.log(phoneNumber(phone));
 //Create a function that takes a number as an argument and returns true or false depending on whether the number is symmetrical or not.
 //A number is symmetrical when it is the same as its reverse.
 
-let symmetryArr = [3, 3, 3, 6];
+// let arrSymmetry = [3, 3, 3, 3];
 
-function symmetrical(symmetryArr) {
-  var num = 0;
-  for (var i = 0; i < symmetryArr.length; i++) {
-    num = symmetryArr[i];
-  }
-  return num;
-}
+// function symmetrical(arrSymmetry) {
+//   var numOne = 0;
+//   var numTwo = 0;
+//   for (var i = 0; i < arrSymmetry.length; i++) {
+//     numOne = arrSymmetry[i];
+//   }
+//   for (var i = arrSymmetry.length; i <= 0; i--) {
+//     numTwo = arrSymmetry[i];
+//   }
+//   if (numOne == numTwo) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
 
-console.log(symmetrical(symmetryArr));
+// console.log(symmetrical(arrSymmetry));
 
 //Given an array of numbers, return an array which contains all the even numbers in the orginal array, which also have even indices.
