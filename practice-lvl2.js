@@ -619,3 +619,5 @@ function symmetrical(arrSymmetry) {
 console.log(symmetrical(arrSymmetry));
 
 //Given an array of numbers, return an array which contains all the even numbers in the orginal array, which also have even indices.
+
+//Given a number, return an array containing the two halves of the number. If the number is odd, make the rightmost number higher.
