@@ -597,7 +597,7 @@ console.log(phoneNumber(phone));
 //Create a function that takes a number as an argument and returns true or false depending on whether the number is symmetrical or not.
 //A number is symmetrical when it is the same as its reverse.
 
-let arrSymmetry = [3, 3, 3, 3];
+let arrSymmetry = [9, 9, 3, 9];
 
 function symmetrical(arrSymmetry) {
   for (var i = 0; i < arrSymmetry.length / 2; i++) {
@@ -605,16 +605,8 @@ function symmetrical(arrSymmetry) {
       return false;
     }
   }
+  return true;
 }
-//   for (var i = arrSymmetry.length - 1; i <= 0; i--) {
-//     numTwo = arrSymmetry[i];
-//   }
-//   if (numOne == numTwo) {
-//     return true;
-//   } else {
-//     return false;
-//   }
-// }
 
 console.log(symmetrical(arrSymmetry));
 
