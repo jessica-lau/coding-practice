@@ -43,7 +43,6 @@ function divisibleFive(limit) {
     } else {
     }
   }
-
   return number;
 }
 
@@ -613,12 +612,12 @@ console.log(symmetrical(arrSymmetry));
 //Given an array of numbers, return an array which contains all the even numbers in the orginal array, which also have even indices.
 
 let numberArr = [1, 2, 6, 3, 8];
+
 function onlyEvens(numberArr) {
   var newArr = [];
   for (var i = 0; i < numberArr.length; i++) {
-    if (numberArr[i % 2 == 0] && numberArr.indexOf[i % 2 == 0]) {
+    if (numberArr[i] % 2 == 0 && i % 2 == 0) {
       newArr.push(numberArr[i]);
-    } else {
     }
   }
   return newArr;
