@@ -626,3 +626,20 @@ function onlyEvens(numberArr) {
 console.log(onlyEvens(numberArr));
 
 //Given a number, return an array containing the two halves of the number. If the number is odd, make the rightmost number higher.
+
+function rightMost(splitNumber) {
+  var arrResult = [];
+  const split = Math.floor(splitNumber / 2);
+
+  if (splitNumber % 2 == 0) {
+    arrResult.push(split);
+    arrResult.push(split);
+  } else {
+    arrResult.push(split);
+    arrResult.push(split + 1);
+  }
+  return arrResult;
+}
+
+let splitNumber = -9;
+console.log(rightMost(splitNumber));
