@@ -643,3 +643,5 @@ function rightMost(splitNumber) {
 
 let splitNumber = -9;
 console.log(rightMost(splitNumber));
+
+//Create a function that takes an array of strings and return an array, sorted from shortest to longest.
