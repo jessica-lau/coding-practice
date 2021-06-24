@@ -644,4 +644,19 @@ function rightMost(splitNumber) {
 let splitNumber = -9;
 console.log(rightMost(splitNumber));
 
+//Create a function that finds the word "debris" in the given string (not case sensitive).
+//If found, return "Duck!!!", otherwise return "There is no falling object, relax.".
+
+function keyword(string) {
+  var action = "";
+  if (string.includes("debris")) {
+    action = "Duck!!!";
+  } else {
+    action = "There is no falling object, relax.";
+  }
+  return action;
+}
+
+console.log(keyword("I see some Debris plunging"));
+
 //Create a function that takes an array of strings and return an array, sorted from shortest to longest.
