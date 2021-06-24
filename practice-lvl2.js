@@ -649,7 +649,7 @@ console.log(rightMost(splitNumber));
 
 function keyword(string) {
   var action = "";
-  if (string.includes("debris")) {
+  if (string.match(/debris/i)) {
     action = "Duck!!!";
   } else {
     action = "There is no falling object, relax.";
@@ -657,6 +657,6 @@ function keyword(string) {
   return action;
 }
 
-console.log(keyword("I see some Debris plunging"));
+console.log(keyword("I see some DebRIS plunging"));
 
 //Create a function that takes an array of strings and return an array, sorted from shortest to longest.
