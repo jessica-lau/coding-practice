@@ -660,3 +660,10 @@ function keyword(string) {
 console.log(keyword("I see some DebRIS plunging"));
 
 //Create a function that takes an array of strings and return an array, sorted from shortest to longest.
+
+let shortToLong = ["ice cream", "soda", "cheesecake", "cookie"];
+
+function stringLength(shortToLong) {
+  let stringOrder = [];
+  for (var i = 0; i < shortToLong.length; i++) {}
+}
