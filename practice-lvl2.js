@@ -665,5 +665,11 @@ let shortToLong = ["ice cream", "soda", "cheesecake", "cookie"];
 
 function stringLength(shortToLong) {
   let stringOrder = [];
-  for (var i = 0; i < shortToLong.length; i++) {}
+  for (var i = 0; i < shortToLong.length; i++) {
+    shortToLong.sort(shortToLong(i));
+    stringOrder.push(i);
+  }
+  return stringOrder;
 }
+
+console.log(stringLength(shortToLong));
