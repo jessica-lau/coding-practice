@@ -659,6 +659,10 @@ function keyword(string) {
 
 console.log(keyword("I see some DebRIS plunging"));
 
+//Create a function that returns the number of hashes and pluses in a string.
+//Return [0, 0] for an empty string.
+//Return in the order of [hashes, pluses].
+
 //Create a function that takes an array of strings and return an array, sorted from shortest to longest.
 
 let shortToLong = ["ice cream", "soda", "cheesecake", "cookie"];
