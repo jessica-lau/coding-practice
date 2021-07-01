@@ -663,6 +663,10 @@ console.log(keyword("I see some DebRIS plunging"));
 //Return [0, 0] for an empty string.
 //Return in the order of [hashes, pluses].
 
+//Create a function that takes an array of numbers and returns the mean (average) of all those numbers.
+//Round to two decimal places.
+//You can expect a number ranging from 0 to 10,000.
+
 //Create a function that takes an array of strings and return an array, sorted from shortest to longest.
 
 let shortToLong = ["ice cream", "soda", "cheesecake", "cookie"];
