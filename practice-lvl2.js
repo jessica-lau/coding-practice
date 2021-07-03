@@ -667,6 +667,8 @@ console.log(keyword("I see some DebRIS plunging"));
 //Round to two decimal places.
 //You can expect a number ranging from 0 to 10,000.
 
+//Create a function to convert an array of percentages to their decimal equivalents.
+
 //Create a function that takes an array of strings and return an array, sorted from shortest to longest.
 
 let shortToLong = ["ice cream", "soda", "cheesecake", "cookie"];
