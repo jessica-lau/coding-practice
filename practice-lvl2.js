@@ -659,6 +659,19 @@ function keyword(string) {
 
 console.log(keyword("I see some DebRIS plunging"));
 
+//Create a function that takes an array of strings and return an array, sorted from shortest to longest.
+
+let shortToLong = ["ice cream", "soda", "cheesecake", "cookie"];
+
+function stringLength(shortToLong) {
+  let stringOrder = [];
+  const order = shortToLong.sort((a, b) => a.length - b.length);
+  stringOrder.push(order);
+  return stringOrder;
+}
+
+console.log(stringLength(shortToLong));
+
 //Create a function that returns the number of hashes and pluses in a string.
 //Return [0, 0] for an empty string.
 //Return in the order of [hashes, pluses].
@@ -668,18 +681,3 @@ console.log(keyword("I see some DebRIS plunging"));
 //You can expect a number ranging from 0 to 10,000.
 
 //Create a function to convert an array of percentages to their decimal equivalents.
-
-//Create a function that takes an array of strings and return an array, sorted from shortest to longest.
-
-let shortToLong = ["ice cream", "soda", "cheesecake", "cookie"];
-
-function stringLength(shortToLong) {
-  let stringOrder = [];
-  for (var i = 0; i < shortToLong.length; i++) {
-    shortToLong.sort(shortToLong(i));
-    stringOrder.push(i);
-  }
-  return stringOrder;
-}
-
-console.log(stringLength(shortToLong));
