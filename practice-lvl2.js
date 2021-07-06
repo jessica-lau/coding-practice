@@ -664,10 +664,8 @@ console.log(keyword("I see some DebRIS plunging"));
 let shortToLong = ["ice cream", "soda", "cheesecake", "cookie"];
 
 function stringLength(shortToLong) {
-  let stringOrder = [];
   const order = shortToLong.sort((a, b) => a.length - b.length);
-  stringOrder.push(order);
-  return stringOrder;
+  return order;
 }
 
 console.log(stringLength(shortToLong));
