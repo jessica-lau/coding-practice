@@ -674,6 +674,8 @@ console.log(stringLength(shortToLong));
 //Return [0, 0] for an empty string.
 //Return in the order of [hashes, pluses].
 
+function hashAndPlus() {}
+
 //Create a function that takes an array of numbers and returns the mean (average) of all those numbers.
 //Round to two decimal places.
 //You can expect a number ranging from 0 to 10,000.
