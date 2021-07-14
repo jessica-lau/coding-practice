@@ -675,6 +675,7 @@ console.log(stringLength(shortToLong));
 //Return in the order of [hashes, pluses].
 
 function hashAndPlus(string) {
+  var hashPlusArr = [];
   if (string == "+" || "#") {
   } else {
     return "[0,0]";
