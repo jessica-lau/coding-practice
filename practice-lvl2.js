@@ -677,6 +677,7 @@ console.log(stringLength(shortToLong));
 function hashAndPlus(string) {
   var hashPlusArr = [];
   if (string.match(/[#][+]/i)) {
+    hashPlusArr = hashPlusArr.push + 1;
   } else {
     return "[0,0]";
   }
